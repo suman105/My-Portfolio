@@ -1,0 +1,60 @@
+/* Awards Container */
+.awards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Award Card */
+  .award-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .award-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Award Icon */
+  .award-icon {
+    font-size: 2rem;
+    color: #007bff;
+  }
+  
+  /* Award Text */
+  .award-text {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .highlight{
+    font-weight: bold;
+  }
+  
+  #about {
+    padding: 50px 20px;
+    background: #f8f9fa; /* Match the card background */
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .award-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .award-icon {
+      margin-bottom: 10px;
+    }
+  }

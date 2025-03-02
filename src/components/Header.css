@@ -1,0 +1,113 @@
+/* Header Section */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px; /* Reduced padding */
+    background: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark text for contrast */
+    min-height: 60vh; /* Reduced height */
+    border-bottom: 1px solid #e9ecef; /* Subtle border at the bottom */
+  }
+  
+  /* Profile Image */
+  .profile-img {
+    width: 250px; /* Slightly smaller */
+    height: 275px; /* Slightly smaller */
+    border-radius: 50%;
+    border: 4px solid #fff; /* White border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+
+.theme-toggle {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: #0056b3;
+}
+  
+  /* Header Text */
+  .header h1 {
+    font-size: 2rem; /* Slightly smaller */
+    margin: 10px 0;
+    font-weight: bold;
+    color: #007bff; /* Blue color for the name */
+    animation: float 3s ease-in-out infinite; /* Floating animation */
+  }
+  
+  .header p {
+    font-size: 1.1rem; /* Slightly smaller */
+    margin: 10px 0;
+    font-weight: 300;
+    color: #555; /* Slightly darker gray for the subtitle */
+    animation: float 3s ease-in-out infinite; /* Floating animation */
+  }
+  
+  /* Floating Animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Resume Link */
+  .resume-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border: 2px solid transparent; /* Transparent border */
+  }
+  
+  .resume-link:hover {
+    background: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      min-height: 50vh; /* Further reduced height for mobile */
+      padding: 30px 20px;
+    }
+  
+    .header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .header p {
+      font-size: 1rem;
+    }
+  
+    .profile-img {
+      width: 100px;
+      height: 100px;
+    }
+  }

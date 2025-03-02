@@ -1,0 +1,159 @@
+/* Contact Section */
+#contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Contact Container */
+.contact-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Left Side (Photo) */
+.contact-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Side (Form and Social Links) */
+.contact-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form Row (for name and email fields) */
+.form-row {
+  display: flex;
+  gap: 15px; /* Space between name and email fields */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1; /* Ensure both fields take equal width */
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit Button */
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #007bff;
+  transform: translateY(-3px);
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+}
+
+/* LinkedIn Icon */
+.social-icon.linkedin {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+/* GitHub Icon */
+.social-icon.github {
+  color: #333; /* GitHub black */
+}
+
+/* LeetCode Icon */
+.social-icon.leetcode {
+  color: #ffa116; /* LeetCode orange */
+}
+
+/* GeeksforGeeks Icon */
+.social-icon.geeksforgeeks {
+  color: #2f8d46; /* GeeksforGeeks green */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+
+  .profile-photo {
+    max-width: 150px;
+  }
+
+  .form-row {
+    flex-direction: column; /* Stack name and email fields vertically on mobile */
+  }
+}
