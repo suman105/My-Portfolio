@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { ThemeContext } from '../context/ThemeContext';
 import profilePhoto from '../assets/profile.jpg';
+import resume from '../assets/SumanMajjari_Resume.pdf';
 import './Header.css';
 
 const Header = () => {
@@ -39,8 +40,8 @@ const Header = () => {
         Web Developer | React Enthusiast | Problem Solver
       </motion.p>
       <motion.a
-        href="/resume.pdf"
-        download
+        href={resume}
+        download="SumanMajjari_Resume.pdf"
         className="resume-link"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}

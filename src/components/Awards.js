@@ -7,7 +7,7 @@ const Awards = () => {
   const awards = [
     {
       icon: <FaTrophy />,
-      text: 'Secured 1st rank at Texas Tech University by Solving 500+ Problems on GeeksforGeeks.',
+      text: 'Secured <span>1<sup>st</sup></span> rank at Texas Tech University by Solving 500+ Problems on GeeksforGeeks.',
     },
     {
       icon: <FaAward />,
@@ -23,7 +23,7 @@ const Awards = () => {
     },
     {
       icon: <FaMedal />,
-      text: 'Secured the Foundation for Excellence (FFE) scholarship for all four years of my Bachelor’s as a top student.',
+      text: 'Secured the Foundation for Excellence (FFE) Scholarship for all four years of my Bachelor’s as a top student.',
     },
   ];
 
@@ -46,7 +46,10 @@ const Awards = () => {
             whileHover={{ scale: 1.05 }}
           >
             <div className="award-icon">{award.icon}</div>
-            <p className="award-text">{award.text}</p>
+            <p
+              className="award-text"
+              dangerouslySetInnerHTML={{ __html: award.text }} // Render HTML content
+            />
           </motion.div>
         ))}
       </div>

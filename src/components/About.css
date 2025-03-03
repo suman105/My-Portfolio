@@ -1,86 +1,87 @@
 /* About Section */
 #about {
-    padding: 50px 20px; 
-    text-align: center;
-  }
-  
-  /* About Card */
+  padding: 20px; /* Fixed negative padding */
+  background: none !important;
+  text-align: center;
+  position: relative;
+  z-index: 10; /* Ensure it's above other elements */
+}
+
+/* About Card */
+.about-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* About Content */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-content strong {
+  color: #007bff; /* Blue color for emphasis */
+}
+
+/* About Icons */
+.about-icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-item .icon {
+  font-size: 2rem;
+  color: #007bff; /* Blue color for icons */
+}
+
+.icon-item p {
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .about-card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    max-width: 800px;
-    margin: 0 auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
   }
-  
-  .about-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* About Content */
-  .about-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
+
   .about-content p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  .about-content strong {
-    color: #007bff; /* Blue color for emphasis */
+    font-size: 1rem;
   }
 
-  
-  /* About Icons */
-  .about-icons {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .icon-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  
   .icon-item .icon {
-    font-size: 2rem;
-    color: #007bff; /* Blue color for icons */
-  }
-  
-  .icon-item p {
-    font-size: 0.9rem;
-    color: #333;
-    font-weight: 500;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .about-card {
-      padding: 20px;
-    }
-  
-    .about-content p {
-      font-size: 1rem;
-    }
-  
-    .icon-item .icon {
-      font-size: 1.5rem;
-    }
-  
-    .icon-item p {
-      font-size: 0.8rem;
-    }
+    font-size: 1.5rem;
   }
 
+  .icon-item p {
+    font-size: 0.8rem;
+  }
+}
